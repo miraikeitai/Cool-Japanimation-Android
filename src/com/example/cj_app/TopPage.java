@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class TopPage extends ActionBarActivity {
 
@@ -16,9 +17,20 @@ public class TopPage extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_top_page);
 		
-		Button asbt = (Button)findViewById(R.id.AniSearchBT);
-		Button tsbt = (Button)findViewById(R.id.TourSearchBT);
-		Button tcbt = (Button)findViewById(R.id.TourCreateBT);
+		ImageButton asbt = (ImageButton)findViewById(R.id.AniSearchBT);
+		ImageButton tsbt = (ImageButton)findViewById(R.id.TourSearchBT);
+		ImageButton tcbt = (ImageButton)findViewById(R.id.TourCreateBT);
+		
+		asbt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// インテントのインスタンス生成
+				Intent intent = new Intent(TopPage.this, AnimeSearch.class);
+				// 次画面のアクティビティ起動
+				startActivity(intent);
+				}
+		});
 
 		tsbt.setOnClickListener(new View.OnClickListener() {
 			@Override

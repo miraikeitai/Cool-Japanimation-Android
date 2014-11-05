@@ -24,6 +24,8 @@
         </activity>
         <activity android:name="com.example.cj_app.DetailsActivity" >
         </activity>
+        <activity android:name="com.example.cj_app.AnimeSearch" >
+        </activity>
         <activity android:name="com.example.cj_app.TourCreateCompletionActivity" >
         </activity>
         <activity android:name="com.example.cj_app.TourCreateConfirmationActivity" >
