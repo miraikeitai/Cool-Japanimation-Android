@@ -8,10 +8,10 @@
         android:id="@+id/anisearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="hint" />
+        android:hint="KeyWord" />
 
     <ImageButton
-        android:id="@+id/TourCreateBT"
+        android:id="@+id/AniSearchBT"
         android:layout_gravity = "right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
