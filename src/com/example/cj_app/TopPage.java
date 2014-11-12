@@ -1,13 +1,11 @@
 package com.example.cj_app;
 
-import android.support.v7.app.ActionBarActivity;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
+import android.view.View;
 import android.widget.ImageButton;
 
 public class TopPage extends ActionBarActivity {
