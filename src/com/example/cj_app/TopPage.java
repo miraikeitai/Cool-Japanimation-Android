@@ -14,11 +14,11 @@ public class TopPage extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_top_page);
-		
+
 		ImageButton asbt = (ImageButton)findViewById(R.id.AniSearchBT);
 		ImageButton tsbt = (ImageButton)findViewById(R.id.TourSearchBT);
 		ImageButton tcbt = (ImageButton)findViewById(R.id.TourCreateBT);
-		
+
 		asbt.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -40,17 +40,17 @@ public class TopPage extends ActionBarActivity {
 				startActivity(intent);
 				}
 		});
-		
+
 		tcbt.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// インテントのインスタンス生成
-				Intent intent = new Intent(TopPage.this, TourCreatemain.class);
+				Intent intent = new Intent(TopPage.this, TourCreatingActivity.class);
 				// 次画面のアクティビティ起動
 				startActivity(intent);
 				}
-		});		
+		});
 	}
 
 	@Override
