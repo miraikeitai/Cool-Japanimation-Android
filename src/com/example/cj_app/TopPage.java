@@ -24,7 +24,7 @@ public class TopPage extends ActionBarActivity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// インテントのインスタンス生成
-				Intent intent = new Intent(TopPage.this, AnimeSearch.class);
+				Intent intent = new Intent(TopPage.this, Navigation.class);
 				// 次画面のアクティビティ起動
 				startActivity(intent);
 				}
