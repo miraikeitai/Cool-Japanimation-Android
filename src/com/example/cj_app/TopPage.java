@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class TopPage extends ActionBarActivity {
@@ -18,13 +19,14 @@ public class TopPage extends ActionBarActivity {
 		ImageButton asbt = (ImageButton)findViewById(R.id.AniSearchBT);
 		ImageButton tsbt = (ImageButton)findViewById(R.id.TourSearchBT);
 		ImageButton tcbt = (ImageButton)findViewById(R.id.TourCreateBT);
+		Button nvbt = (Button)findViewById(R.id.NaviBT);
 
 		asbt.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// インテントのインスタンス生成
-				Intent intent = new Intent(TopPage.this, Navigation.class);
+				Intent intent = new Intent(TopPage.this, AnimeSearch.class);
 				// 次画面のアクティビティ起動
 				startActivity(intent);
 				}
@@ -47,6 +49,17 @@ public class TopPage extends ActionBarActivity {
 				// TODO Auto-generated method stub
 				// インテントのインスタンス生成
 				Intent intent = new Intent(TopPage.this, TourCreatingActivity.class);
+				// 次画面のアクティビティ起動
+				startActivity(intent);
+				}
+		});
+
+		nvbt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// インテントのインスタンス生成
+				Intent intent = new Intent(TopPage.this, Navigation.class);
 				// 次画面のアクティビティ起動
 				startActivity(intent);
 				}
