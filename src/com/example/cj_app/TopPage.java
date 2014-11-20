@@ -1,12 +1,11 @@
 package com.example.cj_app;
 
-import android.support.v7.app.ActionBarActivity;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -16,11 +15,12 @@ public class TopPage extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_top_page);
-		
+
 		ImageButton asbt = (ImageButton)findViewById(R.id.AniSearchBT);
 		ImageButton tsbt = (ImageButton)findViewById(R.id.TourSearchBT);
 		ImageButton tcbt = (ImageButton)findViewById(R.id.TourCreateBT);
-		
+		Button nvbt = (Button)findViewById(R.id.NaviBT);
+
 		asbt.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -42,17 +42,28 @@ public class TopPage extends ActionBarActivity {
 				startActivity(intent);
 				}
 		});
-		
+
 		tcbt.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// インテントのインスタンス生成
-				Intent intent = new Intent(TopPage.this, TourCreatemain.class);
+				Intent intent = new Intent(TopPage.this, TourCreatingActivity.class);
 				// 次画面のアクティビティ起動
 				startActivity(intent);
 				}
-		});		
+		});
+
+		nvbt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// インテントのインスタンス生成
+				Intent intent = new Intent(TopPage.this, Navigation.class);
+				// 次画面のアクティビティ起動
+				startActivity(intent);
+				}
+		});
 	}
 
 	@Override

@@ -3,20 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
     <EditText
-        android:id="@+id/anisearch"
+        android:id="@+id/Place"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="KeyWord" />
 
-    <ImageButton
-        android:id="@+id/AniSearchBT"
-        android:layout_gravity = "right"
+    <Button
+        android:id="@+id/Mapbt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/search"
-        android:background="#00000000"
-        />
+        android:text="Map" />
 
 </LinearLayout>
