@@ -42,15 +42,12 @@ public class TourCreateCompletionActivity extends ActionBarActivity implements O
 
     //ボタンを押した時の処理
     public void onClick(View v){
-    	switch(v.getId()){
-    	case R.id.button1://HOME
-    		this.finish(); //CompletionActivityの終了
-    		break;
-    	case R.id.button2://ローカルファイルの削除
-    		deleteFile(LOCAL_FILE);
-    		break;
-
-    	}
+    	int id = v.getId();
+		if (id == R.id.button1) {
+			this.finish(); //CompletionActivityの終了
+		} else if (id == R.id.button2) {
+			deleteFile(LOCAL_FILE);
+		}
     }
 
     private void sampleFileInput(){
@@ -111,3 +108,4 @@ public class TourCreateCompletionActivity extends ActionBarActivity implements O
     }
 
 }
+

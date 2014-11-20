@@ -1,3 +1,4 @@
+
 package com.example.cj_app;
 
 import android.content.Intent;
@@ -37,27 +38,21 @@ public class TourCreatingActivity extends ActionBarActivity implements OnClickLi
 
     /*ボタンを押した時の処理*/
     public void onClick(View v){
-    	switch(v.getId()){
-    	case R.id.button1://Back
-    		this.finish();//CreatingActivityの終了
-    		break;
-    	case R.id.button2://Next
-
-    		readEditText();
-
-    		Intent intent = new Intent(this, TourCreateConfirmationActivity.class);
-
-    		/*確認画面にテキストボックスのデータを送る*/
+    	int id = v.getId();
+		if (id == R.id.button1) {
+			this.finish();//CreatingActivityの終了
+		} else if (id == R.id.button2) {
+			readEditText();
+			Intent intent = new Intent(this, TourCreateConfirmationActivity.class);
+			/*確認画面にテキストボックスのデータを送る*/
     		intent.putExtra("data1",data1);
-    		intent.putExtra("data2",data2);
-    		intent.putExtra("data3",data3);
-    		intent.putExtra("data4",data4);
-    		intent.putExtra("data5",data5);
-    		intent.putExtra("data6",data6);
-
-    		startActivity(intent);
-    		break;
-    	}
+			intent.putExtra("data2",data2);
+			intent.putExtra("data3",data3);
+			intent.putExtra("data4",data4);
+			intent.putExtra("data5",data5);
+			intent.putExtra("data6",data6);
+			startActivity(intent);
+		}
     }
 
     /*終了条件*/

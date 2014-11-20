@@ -1,3 +1,4 @@
+
 package com.example.cj_app;
 
 
@@ -68,20 +69,16 @@ public class TourCreateConfirmationActivity extends ActionBarActivity implements
 
   //ボタンを押した時の処理
     public void onClick(View v){
-    	switch(v.getId()){
-    	case R.id.button1://Back
-    		this.finish(); //ConfirmationActivityの終了
-    		break;
-    	case R.id.button2://OK(画面遷移)
-
-    		sampleFileOutput();
-
-    		Intent i = new Intent(this, TourCreateCompletionActivity.class);
-    		startActivity(i);
-    		this.finish();
-    		TourCreatingActivity.mflag.setFlagState(true);//CreatingActivityが終了処理に入る
-    		break;
-    	}
+    	int id = v.getId();
+		if (id == R.id.button1) {
+			this.finish(); //ConfirmationActivityの終了
+		} else if (id == R.id.button2) {
+			sampleFileOutput();
+			Intent i = new Intent(this, TourCreateCompletionActivity.class);
+			startActivity(i);
+			this.finish();
+			TourCreatingActivity.mflag.setFlagState(true);//CreatingActivityが終了処理に入る
+		}
     }
 
     /*外部ファイルへ保存*/
@@ -144,3 +141,4 @@ public class TourCreateConfirmationActivity extends ActionBarActivity implements
     }
 
 }
+
