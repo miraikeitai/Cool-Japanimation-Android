@@ -6,23 +6,26 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class AnimeSearch extends ActionBarActivity {
+public class AnimeSearchResult extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_animesearch_main);
+		setContentView(R.layout.activity_animesearch_result);
 
 		ImageButton Sbt = (ImageButton)findViewById(R.id.AniSearchBT);
 
-		Sbt.setOnClickListener(new View.OnClickListener() {
+		ImageButton Nbt = (ImageButton)findViewById(R.id.NarutoBT);
+
+		Nbt.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				// インテントのインスタンス生成
-				Intent intent = new Intent(AnimeSearch.this, AnimeSearchResult.class);
+				Intent intent = new Intent(AnimeSearchResult.this, AnimeSearchDetail.class);
 				// 次画面のアクティビティ起動
 				startActivity(intent);
 				}
 		});
+
 
 
 	}

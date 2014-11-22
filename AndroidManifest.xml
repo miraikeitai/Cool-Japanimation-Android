@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.cj_app"
     android:versionCode="1"
@@ -50,6 +49,10 @@
         </activity>
         <activity android:name="com.example.cj_app.AnimeSearch" >
         </activity>
+        <activity android:name="com.example.cj_app.AnimeSearchResult" >
+        </activity>
+        <activity android:name="com.example.cj_app.AnimeSearchDetail" >
+        </activity>
         <activity android:name="com.example.cj_app.TourCreateCompletionActivity" >
         </activity>
         <activity android:name="com.example.cj_app.TourCreateConfirmationActivity" >
@@ -65,5 +68,6 @@
         <activity android:name="com.example.cj_app.NavigationMap">
         </activity>
     </application>
+
 
 </manifest>
