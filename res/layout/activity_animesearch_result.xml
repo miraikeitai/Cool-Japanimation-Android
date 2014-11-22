@@ -36,7 +36,7 @@
         android:hint="hint" />
 
     <ImageButton
-        android:id="@+id/TourCreateBT"
+        android:id="@+id/AnisearchBT"
         android:layout_gravity="right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,12 +44,13 @@
         android:background="#00000000"
         />
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <ImageButton
+        android:id="@+id/NarutoBT"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/naruto_title" />
+        android:src="@drawable/naruto_title"
+        android:background="#00000000" />
 
 </LinearLayout>

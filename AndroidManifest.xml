@@ -28,6 +28,8 @@
         </activity>
         <activity android:name="com.example.cj_app.AnimeSearchResult" >
         </activity>
+        <activity android:name="com.example.cj_app.AnimeSearchDetail" >
+        </activity>
         <activity android:name="com.example.cj_app.TourCreateCompletionActivity" >
         </activity>
         <activity android:name="com.example.cj_app.TourCreateConfirmationActivity" >
