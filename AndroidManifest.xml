@@ -37,7 +37,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <activity
-            android:name=".TopPage"
+            android:name=".LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,28 +45,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.cj_app.DetailsActivity" >
-        </activity>
-        <activity android:name="com.example.cj_app.AnimeSearch" >
-        </activity>
-        <activity android:name="com.example.cj_app.AnimeSearchResult" >
-        </activity>
-        <activity android:name="com.example.cj_app.AnimeSearchDetail" >
-        </activity>
-        <activity android:name="com.example.cj_app.TourCreateCompletionActivity" >
-        </activity>
-        <activity android:name="com.example.cj_app.TourCreateConfirmationActivity" >
-        </activity>
-        <activity android:name="com.example.cj_app.TourCreatemain" >
-        </activity>
-        <activity android:name="com.example.cj_app.TourCreatingActivity" >
-        </activity>
-        <activity android:name="com.example.cj_app.TourSearchMain" >
-        </activity>
-        <activity android:name="com.example.cj_app.Navigation">
-        </activity>
-        <activity android:name="com.example.cj_app.NavigationMap">
-        </activity>
+
+        <activity android:name="com.example.cj_app.MakeAccountActivity"></activity>
+        <activity android:name="com.example.cj_app.MakeProfileActivity"></activity>
+        <activity android:name="com.example.cj_app.TopPage"></activity>
+        <activity android:name="com.example.cj_app.DetailsActivity" ></activity>
+        <activity android:name="com.example.cj_app.AnimeSearch" ></activity>
+        <activity android:name="com.example.cj_app.AnimeSearchResult" ></activity>
+        <activity android:name="com.example.cj_app.AnimeSearchDetail" ></activity>
+        <activity android:name="com.example.cj_app.TourCreateCompletionActivity" ></activity>
+        <activity android:name="com.example.cj_app.TourCreateConfirmationActivity" ></activity>
+        <activity android:name="com.example.cj_app.TourCreatemain" ></activity>
+        <activity android:name="com.example.cj_app.TourCreatingActivity" ></activity>
+        <activity android:name="com.example.cj_app.TourSearchMain" ></activity>
+        <activity android:name="com.example.cj_app.Navigation"></activity>
+        <activity android:name="com.example.cj_app.NavigationMap"></activity>
     </application>
 
 
