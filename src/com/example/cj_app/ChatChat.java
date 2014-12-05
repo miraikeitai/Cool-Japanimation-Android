@@ -45,12 +45,12 @@ public class ChatChat extends Activity implements OnClickListener{
         	
         	@Override
         	public void onReceivedError(WebView view, int errorCode, String description,String url){
-        		showDialog(ChatChat.this,"","通信エラーです");
+        		showDialog(ChatChat.this,"","���������������������");
         	}
         	
         });
         setContentView(webview);
-        webview.loadUrl("http://cooljapanimation.dip.jp/chat/chat1/main.html");
+        webview.loadUrl("http://cooljapanimation.dip.jp/chat/pbchat");
     }
     private void showDialog(Context context, String title, String text){
     	AlertDialog.Builder ad = new AlertDialog.Builder(context);
