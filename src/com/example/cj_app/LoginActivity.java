@@ -17,7 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class LoginActivity extends ActionBarActivity {
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -32,33 +31,34 @@ public class LoginActivity extends ActionBarActivity {
 		final EditText name = (EditText) findViewById(R.id.editText1);
 		final EditText pass = (EditText) findViewById(R.id.editText2);
 
-	        button2.setOnClickListener(new OnClickListener() {
-	            public void onClick(View v) {
-	                // Sub 画面を起動
-	                Intent intent = new Intent(LoginActivity.this,
-	                		MakeAccountActivity.class);
-	                startActivity(intent);
-	            }
-	        });
+		button2.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				// Sub 画面を起動
+				Intent intent = new Intent(LoginActivity.this,
+						MakeAccountActivity.class);
+				startActivity(intent);
+			}
+		});
 
-	        button1.setOnClickListener(new OnClickListener() {
-	            public void onClick(View v) {
-	                // Sub 画面を起動
+		button1.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				// Sub 画面を起動
 
-					JSONObject json = new JSONObject();
-					try {
-						json.accumulate("name",name.getText());
-						json.accumulate("pass",pass.getText());
-					} catch (JSONException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+				JSONObject json = new JSONObject();
+				try {
+					json.accumulate("name",name.getText());
+					json.accumulate("pass",pass.getText());
+				} catch (JSONException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 
-					// サーバ通信
+				// サーバ通信
 
-	            	new LoginAsyncTask(LoginActivity.this).execute(json.toString());
-	            }
-	        });
+				new LoginAsyncTask(LoginActivity.this).execute(json.toString());
+
+			}
+		});
 	}
 
 	@Override

@@ -60,6 +60,10 @@
         <activity android:name="com.example.cj_app.TourSearchMain" ></activity>
         <activity android:name="com.example.cj_app.Navigation"></activity>
         <activity android:name="com.example.cj_app.NavigationMap"></activity>
+        <activity android:name="com.example.cj_app.ChatTop"></activity>
+        <activity android:name="com.example.cj_app.ChatTour"></activity>
+        <activity android:name="com.example.cj_app.ChatMemo"></activity>
+        <activity android:name="com.example.cj_app.ChatChat"></activity>
     </application>
 
 
