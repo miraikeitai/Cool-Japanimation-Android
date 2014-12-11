@@ -39,4 +39,10 @@
         android:layout_margin="10dp"
         android:text="Navi"/>
 
+    <Button
+        android:id="@+id/MyPageBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyPage" />
+
 </LinearLayout>

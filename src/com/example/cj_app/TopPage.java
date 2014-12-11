@@ -20,6 +20,7 @@ public class TopPage extends ActionBarActivity {
 		ImageButton tsbt = (ImageButton)findViewById(R.id.TourSearchBT);
 		ImageButton tcbt = (ImageButton)findViewById(R.id.TourCreateBT);
 		Button nvbt = (Button)findViewById(R.id.NaviBT);
+		Button mpbt = (Button)findViewById(R.id.MyPageBT);
 
 		asbt.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -64,6 +65,19 @@ public class TopPage extends ActionBarActivity {
 				startActivity(intent);
 				}
 		});
+		
+		mpbt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				// インテントのインスタンス生成
+				Intent intent = new Intent(TopPage.this, MyPage.class);
+				// 次画面のアクティビティ起動
+				startActivity(intent);
+			finish();
+				}
+		});
+	
 	}
 
 	@Override
@@ -84,4 +98,5 @@ public class TopPage extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
 }

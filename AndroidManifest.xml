@@ -64,6 +64,9 @@
         <activity android:name="com.example.cj_app.ChatTour"></activity>
         <activity android:name="com.example.cj_app.ChatMemo"></activity>
         <activity android:name="com.example.cj_app.ChatChat"></activity>
+       <activity android:name="com.example.cj_app.MyPage"></activity>
+       <activity android:name="com.example.cj_app.MyPageFixProfile"></activity>
+       <activity android:name="com.example.cj_app.MyPageRequest"></activity>
     </application>
 
 
