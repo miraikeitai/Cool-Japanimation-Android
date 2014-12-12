@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="600" >
+        
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_gravity="top"
+                android:layout_marginBottom="300dp"
+                android:layout_weight="600"
+                android:scaleType="fitXY"
+                android:src="@drawable/mypage_haikei" />
+
+             <ImageView
+                 android:id="@+id/imageView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="168dp"
+                 android:layout_marginTop="100dp"
+                 android:layout_weight="200"
+                 android:scaleType="fitStart"
+                 android:src="@drawable/mypage_samune" />
+
+             <Button
+                 android:id="@+id/FixProfileBT"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="200dp"
+                 android:layout_marginTop="270dp"
+                 android:text="profile編集" />
+        
+                <Button
+                 android:id="@+id/MyCreateTourBT"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="200dp"
+                 android:layout_marginTop="320dp"
+                 android:text="企画したツアー" />
+        
+               <Button
+                 android:id="@+id/MyJoinTourBT"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="200dp"
+                 android:layout_marginTop="370dp"
+                 android:text="参加中ツアー" />
+               
+               <Button
+                 android:id="@+id/TourRequestBT"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="200dp"
+                 android:layout_marginTop="420dp"
+                 android:text="リクエスト" />
+               
+               <Button
+                 android:id="@+id/MyPageBsckTopBT"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="200dp"
+                 android:layout_marginTop="470dp"
+                 android:text="Topへ" />
+
+               <TextView
+                   android:id="@+id/Profile"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:layout_marginTop="280dp"
+                   android:text="プロフィール" />
+
+               <TextView
+                   android:id="@+id/ProfNameTitle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:layout_marginTop="320dp"
+                   android:text="名前:" />
+               
+               <TextView
+                   android:id="@+id/ProfName"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:layout_marginTop="320dp"
+                   android:layout_marginLeft="50dp"
+
+                   />
+               
+               <TextView
+                   android:id="@+id/ProfcommentsTitle"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:layout_marginTop="360dp"
+                   android:text="ひとこと:" />
+               
+               <TextView
+                   android:id="@+id/Profcomments"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                   android:layout_marginTop="380dp"
+                   android:layout_marginLeft="0dp"
+                   android:text="ひとことかいてね！" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

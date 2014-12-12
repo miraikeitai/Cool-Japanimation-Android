@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/RequestId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="id:BOB" />
+
+        <Button
+            android:id="@+id/RequestYesBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="許可" />
+
+        <Button
+            android:id="@+id/RequestNoBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不許可" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/RequestBackMyPageBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+                   android:layout_marginLeft="100dp"
+        android:text="MyPageへ" />
+
+</LinearLayout>
