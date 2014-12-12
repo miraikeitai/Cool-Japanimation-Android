@@ -29,7 +29,7 @@ public class TourSearchMain extends ActionBarActivity implements OnClickListener
 
         View button1 = findViewById(R.id.button1);
         button1.setOnClickListener(this);
-
+        
         editText = (EditText)findViewById(R.id.editText1);
 
 
@@ -45,14 +45,15 @@ public class TourSearchMain extends ActionBarActivity implements OnClickListener
 
     			//リストに変更する必要ありか
     			TextView txtTime1 = (TextView) findViewById(R.id.textView3);
-    			txtTime1.setText("test1");
+    			txtTime1.setText("NARUTO_Tour");
     			TextView txtTime2 = (TextView) findViewById(R.id.textView4);
-    			txtTime2.setText("test2");
+    			txtTime2.setText("");
     			TextView txtTime3 = (TextView) findViewById(R.id.textView5);
-    			txtTime3.setText("test3");
+    			txtTime3.setText("");
     			TextView txtTime4 = (TextView) findViewById(R.id.textView6);
-    			txtTime4.setText("test4");
+    			txtTime4.setText("");
     		}
+			
 
     		else{
     			TextView txtTime1 = (TextView) findViewById(R.id.textView3);
@@ -65,11 +66,16 @@ public class TourSearchMain extends ActionBarActivity implements OnClickListener
     			txtTime4.setText("");
     		}
 		}
+		if (id == R.id.textView3) {
+			Intent i = new Intent(this, DetailsActivity.class);
+    		startActivity(i);
+    		
+		}
     }
 
     //データベースにデータがあるか判定する関数(多分データベースの方で検索する)
     public boolean CheckData(String txtSearch){
-    	if(txtSearch.equals("test")){
+    	if(txtSearch.equals("NARUTO")){
     		return true;
     	}
     	else if(txtSearch.equals("go")){
