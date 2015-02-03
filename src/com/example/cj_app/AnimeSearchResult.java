@@ -25,8 +25,5 @@ public class AnimeSearchResult extends ActionBarActivity {
 				startActivity(intent);
 				}
 		});
-
-
-
 	}
 }

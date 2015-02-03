@@ -76,11 +76,5 @@ public class AnimeSearch extends ActionBarActivity {
 				startActivity(intent);
             }
         });
-		
-		
- 
-        
-        
-        
 	}
 }
